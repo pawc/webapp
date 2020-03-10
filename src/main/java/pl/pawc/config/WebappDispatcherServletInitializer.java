@@ -1,0 +1,23 @@
+package pl.pawc.config;
+
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
+public class WebappDispatcherServletInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+
+	@Override
+	protected Class<?>[] getRootConfigClasses() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected Class<?>[] getServletConfigClasses() {
+		return new Class[] {WebappConfig.class};
+	}
+
+	@Override
+	protected String[] getServletMappings() {
+		return new String[] {"/"};
+	}
+
+}
