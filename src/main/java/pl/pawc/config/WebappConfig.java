@@ -1,6 +1,7 @@
 package pl.pawc.config;
 
 import java.beans.PropertyVetoException;
+
 import java.util.Properties;
 
 import org.springframework.context.annotation.Bean;
@@ -16,9 +17,9 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 @Configuration
+@ComponentScan(basePackages="pl.pawc")
 @EnableWebMvc
 @EnableTransactionManagement
-@ComponentScan(basePackages="pl.pawc")
 public class WebappConfig {
 
 	@Bean
